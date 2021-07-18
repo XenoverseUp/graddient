@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display";
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+::selection {
+  background-color: rgb(175, 13, 13);
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section h1 {
+  color: #fff;
+  font-size: 15rem;
+  mix-blend-mode: difference;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0.5em 1.1em;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+  background-color: rgba(176, 255, 160, 0.233);
+  color: #fff;
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  border-radius: 2.5px;
+  user-select: none;
+  transition: ease-in-out 0.15s all;
+}
+
+button:hover {
+  background-color: rgba(237, 250, 227, 0.733);
+  color: #000;
+}
+
+button:active {
+  animation: click 0.15s ease-in-out;
+}
+
+span {
+  color: #fff;
+  user-select: none;
+}
+
+@keyframes click {
+  0%,
+  50%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+}
